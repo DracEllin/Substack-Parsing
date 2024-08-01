@@ -19,19 +19,3 @@
 # for box in boxex:
 #     p = box.find("p", class_="title")
 #     print(p.text.strip())
-
-def to_jaden_case(string):
-    words = string.split(' ')
-    new_words = []
-    for word in words:
-        new_words.append(word.capitalize())
-    new_string = ''
-    i = 0
-    while i != len(new_words):
-        if i == len(new_words) - 1:
-            new_string += new_words[i]
-        else:
-            new_string += new_words[i] + ' '
-    return new_string
-string = input("Введите текст: ")
-print(to_jaden_case(string))
